@@ -25,11 +25,13 @@ const Pokemon = (props) => {
           className="pokemon-img"
         />
       </div>
+
       <div className="card-body">
         <div className="card-top">
           <h3>{pokemon.name}</h3>
           <div>#{pokemon.id}</div>
         </div>
+        
         <div className="card-bottom">
           <div className="pokemon-type">
             {pokemon.types.map((type, idx) => {
@@ -40,6 +42,7 @@ const Pokemon = (props) => {
               );
             })}
           </div>
+          
           <button onClick={clickHeart} className="pokemon-heart-btn">
             <div className="pokemon-favorite">{heart}</div>
           </button>

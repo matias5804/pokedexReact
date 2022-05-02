@@ -11,7 +11,6 @@ const NavBar = () => {
 
   return (
     <nav>
-      <div />
       <div>
         <img src={imgUrl} alt="pokeapi-logo" className="navbar-image" />
       </div>

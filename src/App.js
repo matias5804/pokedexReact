@@ -6,10 +6,7 @@ import Pokedex from "./components/Pokedex";
 import { getPokemonData, getPokemons, searchPokemon } from "./api";
 import { FavoriteProvider } from "./contexts/favoritesContext";
 
-
-
 const { useState, useEffect } = React;
-
 const localStorageKey = "favorite_pokemon";
 
 export default function App() {
@@ -110,7 +107,6 @@ export default function App() {
             />
           )}
         </div>
-
       </div>
     </FavoriteProvider>
   );
